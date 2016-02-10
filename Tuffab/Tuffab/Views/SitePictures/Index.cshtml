@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Tuffab.Models.SitePicture>
+
+@{
+    ViewBag.Title = "Image Collection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@*<table class="table">
+        <tr>
+            <th>
+
+                @foreach (var sitePicture in Model)
+                {
+                    @Html.DisplayFor(model => sitePicture.Caption);
+                }
+            </th>
+            <th>
+
+            </th>
+            <th></th>
+        </tr>
+    </table>
+*@
+
+
+@{ 
+    int i = 0;
+}
+@foreach (var item in Model)
+{
+    
+
+        if (i % 3 == 0)
+        {
+            @Html.Raw("<div class=\"row\">"); 
+        }
+
+    //{
+
+
+
+            <div class="col-sm-4">
+
+
+             @*   @if (i % 3 == 0)
+                { *@
+
+
+                    @Html.DisplayFor(modelItem => item.Caption)
+
+                    <img class="img-thumbnail" width="320" height="200" src='@Url.Action("show", "image", new { id = item.ID })' />
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-primary" })
+
+
+                  
+                    @*} *@
+               
+           </div>
+    /*     <div class="col-sm-4">
+
+
+             @if (i % 3 == 1)
+             {
+
+
+                 @Html.DisplayFor(modelItem => item.Caption)
+
+                 <img class="img-thumbnail" src='@Url.Action("show", "image", new { id = item.ID })' />
+                 @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-primary" })
+
+
+                 @* @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                     @Html.ActionLink("Details", "Details", new { id = item.ID }) |*@
+             }
+
+         </div>
+         <div class="col-sm-4">
+
+
+             @if (i % 3 == 2)
+             {
+
+
+                 @Html.DisplayFor(modelItem => item.Caption)
+
+                 <img class="img-thumbnail" src='@Url.Action("show", "image", new { id = item.ID })' />
+                 @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-primary" })
+
+
+                 @* @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                     @Html.ActionLink("Details", "Details", new { id = item.ID }) |*@
+             }
+
+         </div>*/
+
+
+
+    i++;
+    if (i % 3 == 0)
+    {
+        @Html.Raw("</div>")
+    }
+
+
+
+}
+@Html.Raw("</div>"); 
+<div class="row"></div>

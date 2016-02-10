@@ -1,0 +1,64 @@
+﻿@model Tuffab.Models.SitePicture
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Delete</h3>
+
+<h4>Are you sure you want to delete this?</h4>
+<div>
+    <h5>Image Details:</h5>
+    <hr />
+    <!-- <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Caption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Caption)
+        </dd>
+
+    </dl>-->
+
+    <div class="col-lg-4">
+        <div class="panel-danger">
+           @Html.LabelFor(model => model.Filename): &nbsp;    @Html.DisplayFor(model => model.Filename)
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel-danger">
+            @Html.LabelFor(model => model.Caption): &nbsp;     @Html.DisplayFor(model => model.Caption)
+        </div>
+        
+    </div>
+    <div class="col-lg-4">
+        <div class="panel-danger">
+          @Html.LabelFor(model => model.ContentType): &nbsp;  @Html.DisplayFor(model => model.ContentType)
+        </div>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" /> 
+
+        </div>
+        <div class="panel-danger">
+            @Html.ActionLink("Return", "Index")
+
+        </div>
+
+    }
+</div>

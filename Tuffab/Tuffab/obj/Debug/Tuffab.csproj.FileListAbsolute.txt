@@ -80,3 +80,15 @@ c:\Tuffab\Tuffab\Tuffab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.csprojResolveAssemblyReference.cache
 c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.dll
 c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.pdb
+c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.Migrations.InitialCreate.resources
+c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.csproj.GenerateResource.Cache
+c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.Migrations.Initial.resources
+c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.Migrations.AddColumnsForSitePicture.resources
+c:\Tuffab\Tuffab\Tuffab\obj\Debug\Tuffab.Migrations.QuoteRequestSubmit.resources
+C:\Tuffab\Tuffab\Tuffab\bin\SendGrid.dll
+C:\Tuffab\Tuffab\Tuffab\bin\SendGrid.SmtpApi.dll
+C:\Tuffab\Tuffab\Tuffab\bin\SendGridMail.dll
+C:\Tuffab\Tuffab\Tuffab\bin\System.Net.Http.Formatting.dll
+C:\Tuffab\Tuffab\Tuffab\bin\System.Net.Http.Formatting.xml
+C:\Tuffab\Tuffab\Tuffab\bin\TuffabLibrary.dll
+C:\Tuffab\Tuffab\Tuffab\bin\TuffabLibrary.pdb

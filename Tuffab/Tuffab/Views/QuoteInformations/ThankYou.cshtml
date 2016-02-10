@@ -1,0 +1,10 @@
+﻿@model Tuffab.Models.QuoteInformation
+
+@{
+    ViewBag.Title = "ThankYou";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Thank You for your enquiry @ViewBag.FullName. We will be in contact with you shortly.</h3>
+
+@Html.ActionLink("Back to Site", "Index", "Home",null,null)
